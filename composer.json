@@ -1,5 +1,5 @@
 {
-    "name": "cakasim/payone-sdk-stream-client",
+    "name": "andrepayone/payone-sdk-stream-client",
     "description": "A PSR-18 Stream Client Implementation for the SDK for PAYONE Payment Integration.",
     "type": "library",
     "keywords": [
@@ -8,7 +8,7 @@
         "sdk",
         "psr-18"
     ],
-    "homepage": "https://cakasim.de",
+    "homepage": "https://payone.de",
     "readme": "README.md",
     "license": "MIT",
     "authors": [
@@ -17,29 +17,35 @@
             "email": "me@cakasim.de",
             "homepage": "https://cakasim.de",
             "role": "Developer"
+        },
+        {
+            "name": "André Gregor-Herrmann",
+            "email": "andre.gregor-herrmann@payone.com",
+            "homepage": "https://payone.de",
+            "role": "Developer"
         }
     ],
     "support": {
-        "email": "support@cakasim.de",
-        "issues": "https://github.com/Cakasim/php-payone-sdk-stream-client/issues",
-        "source": "https://github.com/Cakasim/php-payone-sdk-stream-client"
+        "email": "integrations@payone.com",
+        "issues": "https://github.com/andrepayone/php-payone-sdk-stream-client/issues",
+        "source": "https://github.com/andrepayone/php-payone-sdk-stream-client"
     },
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.1",
+        "php": "^8.1",
         "psr/http-message": "^1.0",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
-        "cakasim/payone-sdk": "*"
+        "andrepayone/payone-sdk": "*"
     },
     "autoload": {
         "psr-4": {
-            "Cakasim\\Payone\\Sdk\\Http\\StreamClient\\": "src/"
+            "Payone\\Sdk\\Http\\StreamClient\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cakasim\\Payone\\Sdk\\Tests\\Http\\StreamClient\\": "tests/"
+            "Payone\\Sdk\\Tests\\Http\\StreamClient\\": "tests/"
         }
     },
     "require-dev": {},

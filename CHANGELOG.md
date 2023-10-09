@@ -1,6 +1,17 @@
 Changelog
 =========
 
+0.2.0
+-----
+**_Development Release / 2023-10-09_**
+
+_This is a forked release with PHP8 support
+
+### Features
+
+ - **Core Features**
+   - PHP8 Support
+
 0.1.0
 -----
 **_Development Release / 2020-04-26_**

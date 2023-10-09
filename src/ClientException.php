@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Http\StreamClient;
+namespace Payone\Sdk\Http\StreamClient;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 use Exception;
 use Psr\Http\Client\ClientExceptionInterface;
 
