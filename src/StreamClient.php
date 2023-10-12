@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Http\StreamClient;
+namespace Payone\Sdk\Http\StreamClient;
 
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -68,11 +68,11 @@ class StreamClient implements ClientInterface
         restore_error_handler();
 
         if (!empty($err)) {
-            throw new ClientException("Failed to send HTTP request: [{$err['code']}] {$err['message']}");
+            throw new StreamClientException("Failed to send HTTP request: [{$err['code']}] {$err['message']}");
         }
 
         if (!is_resource($stream)) {
-            throw new ClientException("Failed to create HTTP request stream.");
+            throw new StreamClientException("Failed to create HTTP request stream.");
         }
 
         // Create the HTTP response.
