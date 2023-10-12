@@ -68,11 +68,11 @@ class StreamClient implements ClientInterface
         restore_error_handler();
 
         if (!empty($err)) {
-            throw new ClientException("Failed to send HTTP request: [{$err['code']}] {$err['message']}");
+            throw new StreamClientException("Failed to send HTTP request: [{$err['code']}] {$err['message']}");
         }
 
         if (!is_resource($stream)) {
-            throw new ClientException("Failed to create HTTP request stream.");
+            throw new StreamClientException("Failed to create HTTP request stream.");
         }
 
         // Create the HTTP response.
